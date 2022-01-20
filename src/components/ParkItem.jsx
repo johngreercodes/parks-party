@@ -1,8 +1,14 @@
 import React from 'react'
 
-const ParkItem = () => {
+const ParkItem = (props) => {
     return (
-        <div></div>
+        <div>
+            {
+                props.parks.map((park)=>(
+                    <div></div>
+                ))
+            }
+        </div>
     )
 }
 
