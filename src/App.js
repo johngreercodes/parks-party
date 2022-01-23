@@ -21,11 +21,15 @@ const App = () => {
   return (
     <div>
       <h2>welcome to the parks party</h2>
-      <StateItem 
-        key={states.data[0].id}
-        name={states.data[0].name}
-        code={states.data[0].code}
-      />
+      {
+        states.data.map((state)=>(
+          <StateItem 
+            key={state.id}
+            name={state.name}
+            code={state.code}
+          />
+        ))
+      }
       <ParkItem parks={parks}/>
     </div>
   );
