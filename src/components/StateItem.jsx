@@ -3,7 +3,7 @@ import React from 'react'
 const StateItem = (props) => {
    
     const logState = () => {
-        console.log("ding")
+        console.log(`${props.name}`)
     }
 
    return ( 
