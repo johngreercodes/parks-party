@@ -1,7 +1,7 @@
 import React from 'react'
 import states from '../data/states'
 
-const StatePicker = (props) => {
+const StateItem = (props) => {
 
     return (
         <div>
@@ -17,4 +17,4 @@ const StatePicker = (props) => {
     )
 }
 
-export default StatePicker
+export default StateItem
