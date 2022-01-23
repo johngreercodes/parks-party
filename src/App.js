@@ -17,24 +17,9 @@ const App = () => {
     getParks()
   } , [] )
 
-  // useEffect (()=>{
-  //   function getState() {
-  //     const mystate = prompt('enter a 2-digit state code')
-  //     setStates(mystate)      
-  //   }
-  //   getState()
-  // }, [])
-
-  // document.getElementById('btn').addEventListener('click', ()=>{
-  //   alert('hi')
-  // })
-
   return (
     <div>
       <h2>welcome to the parks party</h2>
-      <h3>What state do you live in?</h3>
-      <input></input>
-      <button id="btn">Submit</button>
       <ParkItem parks={parks}/>
     </div>
   );
