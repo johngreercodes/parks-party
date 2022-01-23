@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react'
 import './styles/App.css'
 import axios from 'axios'
 import { BASE_URL } from './globals'
+import ParkItem from './components/ParkItem'
 
 const App = () => {
   const [parks, setParks] = useState([])
@@ -19,8 +20,6 @@ const App = () => {
   return (
     <div>
       <h2>welcome to the parks party</h2>
-      <h3>now on heroku</h3>
-      <h4>now with our own URL</h4>
       <ParkItem />
     </div>
   );
