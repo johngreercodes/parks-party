@@ -6,19 +6,35 @@ import ParkItem from './components/ParkItem'
 
 const App = () => {
   const [parks, setParks] = useState([])
+  const [states, setStates] = useState('')
   const API_KEY = process.env.REACT_APP_NPS_KEY
 
   useEffect( ()=>{
     async function getParks() {
-      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}`)
+      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}&stateCode=${states}`)
       setParks(response.data.data)
     }
     getParks()
   } , [] )
 
+  // useEffect (()=>{
+  //   function getState() {
+  //     const mystate = prompt('enter a 2-digit state code')
+  //     setStates(mystate)      
+  //   }
+  //   getState()
+  // }, [])
+
+  // document.getElementById('btn').addEventListener('click', ()=>{
+  //   alert('hi')
+  // })
+
   return (
     <div>
       <h2>welcome to the parks party</h2>
+      <h3>What state do you live in?</h3>
+      <input></input>
+      <button id="btn">Submit</button>
       <ParkItem parks={parks}/>
     </div>
   );
