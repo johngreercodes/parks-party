@@ -19,11 +19,11 @@ const App = () => {
   return (
     <div>
       <h2>welcome to the parks party</h2>
-      
+      <ParkItem parks={parks}/>
     </div>
   );
 }
 
 export default App
 
-//<ParkItem parks={parks}/>
+//
