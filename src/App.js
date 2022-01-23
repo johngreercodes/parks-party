@@ -11,8 +11,7 @@ const App = () => {
   useEffect( ()=>{
     async function getParks() {
       const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}`)
-      setParks(response.data.results)
-      console.log(parks)
+      setParks(response.data.data)
     }
     getParks()
   } , [] )
@@ -20,9 +19,11 @@ const App = () => {
   return (
     <div>
       <h2>welcome to the parks party</h2>
-      <ParkItem />
+      
     </div>
   );
 }
 
 export default App
+
+//<ParkItem parks={parks}/>
