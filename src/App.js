@@ -22,9 +22,9 @@ const App = () => {
     <div>
       <h2>welcome to the parks party</h2>
       <StateItem 
-        key={states.id}
-        name={states.name}
-        code={states.code}
+        key={states.data[0].id}
+        name={states.data[0].name}
+        code={states.data[0].code}
       />
       <ParkItem parks={parks}/>
     </div>

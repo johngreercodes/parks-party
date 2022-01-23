@@ -1,7 +1,7 @@
 import React from 'react'
 
 const StateItem = (props) => (
-    <div key={props.key}>
+    <div>
         <button type="button">{props.name}</button>
     </div>
 )
