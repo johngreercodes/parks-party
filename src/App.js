@@ -8,6 +8,7 @@ import states from './data/states.json'
 
 const App = () => {
   const [parks, setParks] = useState([])
+  const [usState, setUsState] = useState('Your State')
   const API_KEY = process.env.REACT_APP_NPS_KEY
 
   useEffect( ()=>{
@@ -20,7 +21,8 @@ const App = () => {
 
   return (
     <div>
-      <h2>welcome to the parks party</h2>
+      <h1>welcome to the parks party</h1>
+      <h2>select a state to get parks</h2>
       {
         states.data.map((state)=>(
           <StateItem 
