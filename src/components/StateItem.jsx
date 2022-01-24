@@ -7,7 +7,7 @@ const StateItem = (props) => {
     }
 
    return ( 
-   <button type="button" key={props.key} onClick={logState}>
+   <button type="button" id="button" key={props.key} onClick={logState}>
         {props.name}
     </button>
    )
