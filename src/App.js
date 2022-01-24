@@ -26,7 +26,7 @@ const App = () => {
       {
         states.data.map((state)=>(
           <StateItem 
-            key={state.id}
+            key={state.id} 
             name={state.name}
             code={state.code}
           />
