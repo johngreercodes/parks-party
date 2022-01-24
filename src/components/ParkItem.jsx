@@ -7,8 +7,9 @@ const ParkItem = (props) => {
                props.parks.map((park)=>(
                    <div key={park.id}>
                        <h1>{park.fullName}</h1>
+                       <div><button onClick={park.directionsUrl} type="button">Take me there!</button></div>
                        <img width="50%" src={park.images[0].url} alt={park.fullName}/>
-                       <button onClick={park.directionsUrl} type="button">Take me there!</button>
+                       
                    </div>
                ))
             }
