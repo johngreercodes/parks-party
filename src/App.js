@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect( ()=>{
     async function getParks() {
-      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}`) //&stateCode=${states}
+      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}`) // &stateCode=${states}
       setParks(response.data.data) 
     }
     getParks()

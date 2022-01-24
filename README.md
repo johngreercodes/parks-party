@@ -2,5 +2,5 @@
 
 to do list
 - [ ] wire states back up to App.js to update the state
-- [ ] style "take me there" buttons
-- [ ] properly hyperlink "take me there" buttons
+- [x] style "take me there" buttons
+- [x] properly hyperlink "take me there" buttons
