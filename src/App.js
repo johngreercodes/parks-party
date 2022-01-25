@@ -27,8 +27,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>welcome to the parks party</h1>
-      <h2>select a state to get parks</h2>
+      <h2>select a state 📍 get some parks 🌳</h2>
       {
         states.data.map((state)=>(
           <StateItem 
