@@ -51,11 +51,6 @@
         "code": "DC"
     },
     {
-        "id": 10,
-        "name": "Federated States Of Micronesia",
-        "code": "FM"
-    },
-    {
         "id": 11,
         "name": "Florida",
         "code": "FL"
@@ -114,11 +109,6 @@
         "id": 22,
         "name": "Maine",
         "code": "ME"
-    },
-    {
-        "id": 23,
-        "name": "Marshall Islands",
-        "code": "MH"
     },
     {
         "id": 24,
@@ -196,11 +186,6 @@
         "code": "ND"
     },
     {
-        "id": 39,
-        "name": "Northern Mariana Islands",
-        "code": "MP"
-    },
-    {
         "id": 40,
         "name": "Ohio",
         "code": "OH"
@@ -224,11 +209,6 @@
         "id": 44,
         "name": "Pennsylvania",
         "code": "PA"
-    },
-    {
-        "id": 45,
-        "name": "Puerto Rico",
-        "code": "PR"
     },
     {
         "id": 46,
@@ -264,11 +244,6 @@
         "id": 52,
         "name": "Vermont",
         "code": "VT"
-    },
-    {
-        "id": 53,
-        "name": "Virgin Islands",
-        "code": "VI"
     },
     {
         "id": 54,
