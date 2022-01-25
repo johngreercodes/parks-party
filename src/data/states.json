@@ -11,11 +11,6 @@
         "code": "AK"
     },
     {
-        "id": 2,
-        "name": "American Samoa",
-        "code": "AS"
-    },
-    {
         "id": 3,
         "name": "Arizona",
         "code": "AZ"
@@ -49,11 +44,6 @@
         "id": 9,
         "name": "District Of Columbia",
         "code": "DC"
-    },
-    {
-        "id": 10,
-        "name": "Federated States Of Micronesia",
-        "code": "FM"
     },
     {
         "id": 11,
@@ -114,11 +104,6 @@
         "id": 22,
         "name": "Maine",
         "code": "ME"
-    },
-    {
-        "id": 23,
-        "name": "Marshall Islands",
-        "code": "MH"
     },
     {
         "id": 24,
@@ -196,11 +181,6 @@
         "code": "ND"
     },
     {
-        "id": 39,
-        "name": "Northern Mariana Islands",
-        "code": "MP"
-    },
-    {
         "id": 40,
         "name": "Ohio",
         "code": "OH"
@@ -214,11 +194,6 @@
         "id": 42,
         "name": "Oregon",
         "code": "OR"
-    },
-    {
-        "id": 43,
-        "name": "Palau",
-        "code": "PW"
     },
     {
         "id": 44,
@@ -264,11 +239,6 @@
         "id": 52,
         "name": "Vermont",
         "code": "VT"
-    },
-    {
-        "id": 53,
-        "name": "Virgin Islands",
-        "code": "VI"
     },
     {
         "id": 54,

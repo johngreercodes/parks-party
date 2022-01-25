@@ -4,7 +4,7 @@ const StateItem = (props) => {
 
    return ( 
    <button key={props.id} type="button" id="button" onClick={()=>props.getMyState(props.code)}>
-        {props.name}
+        {props.code}
     </button>
    )
 }
