@@ -20,9 +20,7 @@ const App = () => {
   } , [myState] )
 
   const getMyState = (choiceState) => {
-    console.log(choiceState)
     setMyState(choiceState)
-    console.log(myState)
   }
 
   return (
