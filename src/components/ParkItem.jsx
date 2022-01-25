@@ -8,6 +8,7 @@ const ParkItem = (props) => {
                    <div key={park.id} id='parkItem'>
                        <img width="50%" src={park.images[0].url} alt={park.fullName}/>
                        <h1>{park.fullName}</h1>
+                       <p>{park.description}</p>
                        <a href={park.directionsUrl} target="_blank"><button type="button" id="button">Take me there!</button></a>
                    </div>
                ))

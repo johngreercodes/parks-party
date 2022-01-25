@@ -20,7 +20,12 @@
 }
 
 #parkItem {
+  margin: 10px;
   padding: 10px;
   border-style: dotted;
   border-color: rgb(41, 43, 38);
+}
+
+p {
+  font-family: 'Actor', sans-serif;
 }
