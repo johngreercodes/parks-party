@@ -7,17 +7,23 @@ import StateItem from './components/StateItem'
 import states from './data/states.json'
 
 const App = () => {
-  const [parks, setParks] = useState([])
-  const [usState, setUsState] = useState('Your State')
   const API_KEY = process.env.REACT_APP_NPS_KEY
+  const [parks, setParks] = useState([])
+  const [myState, setMyState] = useState(null)
 
   useEffect( ()=>{
     async function getParks() {
-      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}`) // &stateCode=${states}
+      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}&stateCode=${myState}`) // 
       setParks(response.data.data) 
     }
     getParks()
-  } , [] )
+  } , [myState] )
+
+  const getMyState = (choiceState) => {
+    console.log(choiceState)
+    setMyState(choiceState)
+    console.log(myState)
+  }
 
   return (
     <div>
@@ -29,6 +35,7 @@ const App = () => {
             key={state.id} 
             name={state.name}
             code={state.code}
+            getMyState={getMyState}
           />
         ))
       }
