@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect( ()=>{
     async function getParks() {
-      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}&stateCode=${myState}`) // 
+      const response = await axios.get(`${BASE_URL}&api_key=${API_KEY}&stateCode=${myState}`) 
       setParks(response.data.data) 
     }
     getParks()
@@ -42,5 +42,3 @@ const App = () => {
 }
 
 export default App
-
-//
