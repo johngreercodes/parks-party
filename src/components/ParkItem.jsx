@@ -18,5 +18,3 @@ const ParkItem = (props) => {
 }
 
 export default ParkItem
-
-// onClick={park.directionsUrl}
