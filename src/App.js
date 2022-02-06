@@ -27,6 +27,7 @@ const App = () => {
     <div>
       <h2>select a state 📍 get some parks 🌳</h2>
       <p>powered by the <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank">National Park Service API</a> and <a href="https://reactjs.org/" target="_blank">React</a></p>
+      <select name="US States" id="states">
       {
         states.data.map((state)=>(
           <StateItem 
@@ -37,6 +38,7 @@ const App = () => {
           />
         ))
       }
+      </select>
       <ParkItem parks={parks}/>
     </div>
   );

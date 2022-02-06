@@ -3,9 +3,11 @@ import React from 'react'
 const StateItem = (props) => {
 
    return ( 
-   <button key={props.id} type="button" id="button" onClick={()=>props.getMyState(props.code)}>
-        {props.code}
-    </button>
+   <option key={props.id} value={props.code}>{props.name}</option>
+   
+   // <button key={props.id} type="button" id="button" onClick={()=>props.getMyState(props.code)}>
+   //      {props.code}
+   //  </button>
    )
 }
 
