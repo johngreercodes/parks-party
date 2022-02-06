@@ -27,18 +27,21 @@ const App = () => {
     <div>
       <h2>select a state 📍 get some parks 🌳</h2>
       <p>powered by the <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank">National Park Service API</a> and <a href="https://reactjs.org/" target="_blank">React</a></p>
-      <select name="US States" id="states">
-      {
-        states.data.map((state)=>(
-          <StateItem 
-            key={state.id} 
-            name={state.name}
-            code={state.code}
-            getMyState={getMyState}
-          />
-        ))
-      }
-      </select>
+      <form onSubmit={()=>getMyState()}>
+        <select name="US States" id="states">
+          {
+            states.data.map((state)=>(
+              <StateItem 
+                key={state.id} 
+                name={state.name}
+                code={state.code}
+                getMyState={getMyState}
+              />
+            ))
+          }
+        </select>
+        <input type="submit" value="Submit"/>
+      </form>
       <ParkItem parks={parks}/>
     </div>
   );
