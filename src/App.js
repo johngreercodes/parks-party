@@ -19,24 +19,34 @@ const App = () => {
     getParks()
   } , [myState] )
 
-  const getMyState = (choiceState) => {
-    choiceState.preventDefault()
-    setMyState(choiceState)
+  // const getMyState = (choiceState) => {
+  //   choiceState.preventDefault()
+  //   setMyState(choiceState)
+  //   console.log(choiceState.target[0][0].value)
+  // }
+
+  const handleChange = (event) => {
+    setMyState(event.target.value)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('hi')
   }
 
   return (
     <div>
       <h2>select a state 📍 get some parks 🌳</h2>
       <p>powered by the <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank">National Park Service API</a> and <a href="https://reactjs.org/" target="_blank">React</a></p>
-      <form onSubmit={getMyState}>
-        <select>
+      <form onSubmit={handleSubmit}>
+        <select onChange={handleChange}>
           {
             states.data.map((state)=>(
               <StateItem 
                 key={state.id} 
                 name={state.name}
                 code={state.code}
-                getMyState={getMyState}
+                // getMyState={getMyState}
               />
             ))
           }
