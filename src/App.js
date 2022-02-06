@@ -51,7 +51,6 @@ const App = () => {
             ))
           }
         </select>
-        <input type="submit" value="Submit"/>
       </form>
       <ParkItem parks={parks}/>
     </div>
