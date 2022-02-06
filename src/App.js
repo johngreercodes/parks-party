@@ -20,6 +20,7 @@ const App = () => {
   } , [myState] )
 
   const getMyState = (choiceState) => {
+    choiceState.preventDefault()
     setMyState(choiceState)
   }
 
@@ -27,8 +28,8 @@ const App = () => {
     <div>
       <h2>select a state 📍 get some parks 🌳</h2>
       <p>powered by the <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank">National Park Service API</a> and <a href="https://reactjs.org/" target="_blank">React</a></p>
-      <form onSubmit={()=>getMyState()}>
-        <select name="US States" id="states">
+      <form onSubmit={getMyState}>
+        <select>
           {
             states.data.map((state)=>(
               <StateItem 
