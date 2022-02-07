@@ -12,7 +12,7 @@
   margin: 5px 5px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: large;
+  font-size: x-large;
 }
 
 #button:hover {
@@ -27,7 +27,8 @@
 }
 
 p {
-  font-family: 'Actor', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
 }
 
 .select {
@@ -38,6 +39,10 @@ p {
   border-radius: 10px;
   cursor: pointer;
   font-size: large;
+}
+
+.select:hover {
+  background-color: rgb(41, 43, 38);
 }
 
 a:link {

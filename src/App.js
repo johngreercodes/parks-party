@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div>
-      <h2>select a state 📍 get some parks 🌳</h2>
+      <h1>select a state 📍 get some parks 🌳</h1>
       <form onSubmit={handleSubmit}>
         <select class="select" value={myState.value} onChange={handleChange}>
           {
