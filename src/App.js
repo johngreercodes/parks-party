@@ -38,7 +38,7 @@ const App = () => {
     <div>
       <h2>select a state 📍 get some parks 🌳</h2>
       <form onSubmit={handleSubmit}>
-        <select value={myState.value} onChange={handleChange}>
+        <select class="select" value={myState.value} onChange={handleChange}>
           {
             states.data.map((state)=>(
               <StateItem 
@@ -51,7 +51,7 @@ const App = () => {
           }
         </select>
       </form>
-      <p>powered by the <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank">National Park Service API</a> and <a href="https://reactjs.org/" target="_blank">React</a></p>
+      <h3>powered by the <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="_blank">National Park Service API</a> and <a href="https://reactjs.org/" target="_blank">React</a></h3>
       <ParkItem parks={parks}/>
     </div>
   );

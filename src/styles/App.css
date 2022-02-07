@@ -29,3 +29,25 @@
 p {
   font-family: 'Actor', sans-serif;
 }
+
+.select {
+  color: rgb(248,246,230);
+  background-color: rgb(100,107,82);
+  padding: 15px 15px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
